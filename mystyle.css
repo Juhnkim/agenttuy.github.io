@@ -1,0 +1,51 @@
+body{
+	background-color:darkblue;
+	text-align:center;
+}
+
+#container{
+	background-color:white;
+	margin:50px;
+	border-radius:25px;
+	padding:10px;
+}
+
+#gallery{
+	width:265px;
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
+
+/*
+	This is a comment in css
+*/
+#left{
+	float:left;
+}
+
+#middle{
+	float:left;
+}
+
+#right{
+	float:left;
+}
+
+img{
+	width:150px;	
+}
+
+#gallery img{
+	width:125px;
+	border-radius:25px;
+}
+
+#gallery input[type="button"]{
+	background-color:orange;
+	color:pink;
+	font-weight:bolder;
+	padding:15px;
+	margin:4px;
+}

@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title>Flash Card App</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="myscripts.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <p id="navigation">
+       <a href="index.html"> Home</a> |
+       <a href="aboutme.html">About Me</a> |
+       <a href="projects.html">Projects</a>
+      </p>
+      <div id="flashcards">
+        <p>
+           <input type="button" value="Get Card" onclick="getNumbers()" />  
+        </p>
+        <p id="operand1">
+          0
+        </p>
+        <p>
+          +
+        </p>
+        <p id="operand2">
+          0  
+        </p>
+        <p>
+          __________
+        </p>
+        <p>
+          <input type="text" value="0" id="userAnswer" />
+        </p>
+        <p>
+          <input type="button" value="Check Answer" onclick="checkAnswer()" />
+        </p>
+        <p id="results">
+        </p>
+      </div>
+    </div>
+  </body
+</html>
