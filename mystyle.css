@@ -1,3 +1,29 @@
+.box{
+	border-style:solid;
+	width:100px;
+	height:100px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-align:middle;
+}
+
+#players{
+	float:left;
+}
+
+#board{
+	float:right;
+	width:350px;
+	height:350px;
+}
+
+#game{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 body{
 	background-color:darkblue;
 	text-align:center;
