@@ -3,7 +3,8 @@
   <head>
     <title>Flash Card App</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script src="myscripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="flashcard.css">
+    <script src="flashcard.js"></script>
   </head>
   <body>
     <div id="container">
@@ -12,29 +13,30 @@
        <a href="aboutme.html">About Me</a> |
        <a href="projects.html">Projects</a>
       </p>
-      <div id="flashcards">
+      <div id="flashcard">
         <p>
-           <input type="button" value="Get Card" onclick="getNumbers()" />  
+          <input type="button" value="New Card" onclick="getCard()" />
         </p>
         <p id="operand1">
           0
         </p>
-        <p>
+        <p id="operator">
           +
         </p>
         <p id="operand2">
-          0  
+          0
         </p>
         <p>
           __________
         </p>
-        <p>
-          <input type="text" value="0" id="userAnswer" />
+        <p id="answer">
+          <input type="text" value="0" id="answerInput" />
         </p>
         <p>
           <input type="button" value="Check Answer" onclick="checkAnswer()" />
         </p>
-        <p id="results">
+        <p id="response">
+          Hit "New Card" to start!
         </p>
       </div>
     </div>

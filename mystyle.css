@@ -1,7 +1,5 @@
-
-
 body{
-	background-color:darkblue;
+	background-color:lightsteelblue;
 	text-align:center;
 }
 
@@ -12,6 +10,110 @@ body{
 	padding:10px;
 }
 
+#projectList{
+	max-width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.box{
+	border-style:solid;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-align:middle;
+	background-color:white;
+
+}
+
+/*
+CSS for 2048.html
+*/
+
+.score{
+	float:right;
+	background-color:lightgray;
+	width:120px;
+	height:80px;
+}
+
+#2048Board{
+	margin-left:auto;
+	margin-right:auto;
+	width:431px;
+	height:450px;
+}
+
+#scoreBoard{
+	height:62px;
+}
+
+#2048Game{
+	height:700px;
+}
+
+#title{
+	font-size:44px;
+	font-weight:bolder;
+	color:purple;
+}
+
+/*
+CSS for conenct4 
+*/
+
+#connect4board{
+	margin-left:auto;
+	margin-right:auto;
+	width:440px;
+	height:360px;
+}
+
+.smallBox{
+	height:50px;
+	width:50px;
+	border-radius:50px;
+}
+
+/*
+For tic tac toe
+*/
+.mediumBox{
+	width:100px;
+	height:100px;
+}
+
+#notes{
+	color:white;
+}
+
+#players{
+	float:left;
+}
+
+#board{
+	float:right;
+	width:350px;
+	height:350px;
+}
+
+#game{
+	border-style:solid;
+	width:600px;
+	height:400px;
+	padding:50px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	background-color:pink;
+	margin-bottom:25px;
+	
+}
+
+/*
+CSS for gallery.html
+*/
+
 #gallery{
 	width:265px;
 	height:250px;
@@ -20,9 +122,6 @@ body{
 	margin-top:25px;
 }
 
-/*
-	This is a comment in css
-*/
 #left{
 	float:left;
 }
@@ -50,4 +149,26 @@ img{
 	font-weight:bolder;
 	padding:15px;
 	margin:4px;
+}
+
+#hangmanGame{
+	width:400px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#letters{
+	  margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+}
+.abcRow{
+	width:30px;
+}
+
+#letter{
+	float:left;
+	height:15px;
+	width:15px;
 }

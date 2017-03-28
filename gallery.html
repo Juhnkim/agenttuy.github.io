@@ -3,7 +3,8 @@
   <head>
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script src="myscripts.js"></script>
+    <script src="gallery.js"></script>
+
   </head>
   <body>
     <div id="container">
@@ -13,11 +14,15 @@
        <a href="projects.html">Projects</a>
       </p>
       
+      
+      
       <div id="gallery">
-        <input type="button" onclick="goLeft()" value="<--" />
-        <img id="pic" src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg" />
-        <input type="button" onclick="goRight()" value="-->" />
+        <input type="button" value="<--" onclick="goLeft()" />
+        <img src="http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg" id="pic"/>
+        <input type="button" value="-->" onclick="goRight()" />
       </div>
+      
+      
       
     </div>
   </body>

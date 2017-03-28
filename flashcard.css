@@ -1,0 +1,15 @@
+#flashcard input[type=button]{
+  background-color:purple;
+  color:white;
+  padding:20px;
+  font-size:20px;
+}
+
+#flashcard{
+  background-color:pink;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:15px;
+  border-radius:25px;
+}
