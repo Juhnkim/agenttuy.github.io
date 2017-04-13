@@ -1,0 +1,30 @@
+#container{
+	background-color:white;
+	margin:50px;
+	border-radius:25px;
+	padding:10px;
+}
+
+body{
+	background-color:lightsteelblue;
+	text-align:center;
+}
+
+.box{
+	border-style:solid;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-align:middle;
+  height:100px;
+  width:100px;
+	background-color:white;
+
+}
+
+#board{
+	margin-left:auto;
+  margin-right:auto;
+	width:350px;
+	height:350px;
+}

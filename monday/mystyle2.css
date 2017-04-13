@@ -1,0 +1,179 @@
+body{
+	background-color:lightsteelblue;
+	text-align:center;
+}
+
+#container{
+	background-color:white;
+	margin:50px;
+	border-radius:25px;
+	padding:10px;
+}
+
+#projectList{
+	max-width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.box{
+	border-style:solid;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-align:middle;
+	background-color:white;
+
+}
+
+/*
+CSS for 2048.html
+*/
+
+.score{
+	float:right;
+	background-color:lightgray;
+	width:120px;
+	height:80px;
+}
+
+#2048Board{
+	margin-left:auto;
+	margin-right:auto;
+	width:431px;
+	height:450px;
+}
+
+#scoreBoard{
+	height:62px;
+}
+
+#2048Game{
+	height:700px;
+}
+
+#title{
+	font-size:44px;
+	font-weight:bolder;
+	color:purple;
+}
+
+/*
+CSS for conenct4 
+*/
+
+#connect4board{
+	margin-left:auto;
+	margin-right:auto;
+	width:440px;
+	height:360px;
+}
+
+.smallBox{
+	height:50px;
+	width:50px;
+	border-radius:50px;
+}
+
+/*
+For tic tac toe
+*/
+.mediumBox{
+	width:100px;
+	height:100px;
+}
+
+#notes{
+	color:white;
+}
+
+#players{
+	float:left;
+}
+
+#board{
+	float:right;
+	width:350px;
+	height:350px;
+}
+
+#game{
+	border-style:solid;
+	width:600px;
+	height:400px;
+	padding:50px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	background-color:pink;
+	margin-bottom:25px;
+	
+}
+
+/*
+CSS for gallery.html
+*/
+/*
+#gallery{
+	width:265px;
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
+*/
+#left{
+	float:left;
+}
+
+#middle{
+	float:left;
+}
+
+#right{
+	float:left;
+}
+
+img{
+	width:150px;	
+}
+
+/*
+#gallery img{
+	width:125px;
+	border-radius:25px;
+}
+*/
+
+
+#gallery input[type="button"]{
+	background-color:orange;
+	color:pink;
+	font-weight:bolder;
+	padding:15px;
+	margin:4px;
+	font-size:20px;
+}
+
+
+#hangmanGame{
+	width:400px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#letters{
+	  margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+}
+.abcRow{
+	width:30px;
+}
+
+#letter{
+	float:left;
+	height:15px;
+	width:15px;
+}
