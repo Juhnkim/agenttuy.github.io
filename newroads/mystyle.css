@@ -1,0 +1,21 @@
+body{
+	background-color:lightsteelblue;
+	text-align:center;
+}
+
+#container{
+	background-color:white;
+	margin:50px;
+	border-radius:25px;
+	padding:10px;
+}
+
+
+img{
+	width:150px;	
+}
+
+
+ul {
+  list-style-type: none;
+}
