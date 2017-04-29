@@ -1,0 +1,80 @@
+
+<html>
+  <head>
+    <title>Connect 4</title>
+     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="connect4.js" ></script>
+          <div id="container">
+        <div id="navigation">
+          <a href="index.html">Home</a> |
+          <a href="aboutme.html"> About Me</a> |
+          <a href="projects.html"> Projects </a> |
+           <div id="game">
+             <div id="Connect4player">
+           <input type="button" onclick="chooseColor('black')" style="background-color:black;border-radius:50px;height:25px;width:25px;"/>
+           <input type="button" onclick="chooseColor('red')" style="background-color:red;border-radius:50px;height:25px;width:25px;"/>
+           <div id="notes">
+             Choose a color to play!
+           </div>
+             </div>
+         <div id="Connect4board">
+          <div>
+          <div>
+            <div class="box smallBox col1" id="row1col1" style="background-color:white" onclick="makeMove('row1col1', 'col1', 'row1')"></div> 
+            <div class="box smallBox col2" id="row1col2" style="background-color:white" onclick="makeMove('row1col2', 'col2', 'row1')"></div>
+            <div class="box smallBox col3" id="row1col3" style="background-color:white" onclick="makeMove('row1col3', 'col3', 'row1')"></div>
+            <div class="box smallBox col4" id="row1col4" style="background-color:white" onclick="makeMove('row1col4', 'col4', 'row1')"></div>
+            <div class="box smallBox col5" id="row1col5" style="background-color:white" onclick="makeMove('row1col5', 'col5', 'row1')"></div>
+            <div class="box smallBox col6" id="row1col6" style="background-color:white" onclick="makeMove('row1col6', 'col6', 'row1')"></div>
+            <div class="box smallBox col7" id="row1col7" style="background-color:white" onclick="makeMove('row1col7', 'col7', 'row1')"></div>
+         </div>
+           <div>
+            <div class="box smallBox col1" id="row2col1" style="background-color:white" onclick="makeMove('row2col1', 'col1', 'row2')"></div> 
+            <div class="box smallBox col2" id="row2col2" style="background-color:white" onclick="makeMove('row2col2', 'col2', 'row2')"></div>
+            <div class="box smallBox col3" id="row2col3" style="background-color:white" onclick="makeMove('row2col3', 'col3', 'row2')"></div>
+            <div class="box smallBox col4" id="row2col4" style="background-color:white" onclick="makeMove('row2col4', 'col4', 'row2')"></div>
+            <div class="box smallBox col5" id="row2col5" style="background-color:white" onclick="makeMove('row2col5', 'col5', 'row2')"></div>
+            <div class="box smallBox col6" id="row2col6" style="background-color:white" onclick="makeMove('row2col6', 'col6', 'row2')"></div>
+            <div class="box smallBox col7" id="row2col7" style="background-color:white" onclick="makeMove('row2col7', 'col7', 'row2')"></div>
+         </div>
+          <div>
+            <div class="box smallBox col1" id="row3col1" style="background-color:white" onclick="makeMove('row3col1', 'col1', 'row3')"></div> 
+            <div class="box smallBox col2" id="row3col2" style="background-color:white" onclick="makeMove('row3col2', 'col2', 'row3')"></div>
+            <div class="box smallBox col3" id="row3col3" style="background-color:white" onclick="makeMove('row3col3', 'col3', 'row3')"></div>
+            <div class="box smallBox col4" id="row3col4" style="background-color:white" onclick="makeMove('row3col4', 'col4', 'row3')"></div>
+            <div class="box smallBox col5" id="row3col5" style="background-color:white" onclick="makeMove('row3col5', 'col5', 'row3')"></div>
+            <div class="box smallBox col6" id="row3col6" style="background-color:white" onclick="makeMove('row3col6', 'col6', 'row3')"></div>
+            <div class="box smallBox col7" id="row3col7" style="background-color:white" onclick="makeMove('row3col7', 'col7', 'row3')"></div>
+         </div>
+            <div>
+            <div class="box smallBox col1" id="row4col1" style="background-color:white" onclick="makeMove('row4col1', 'col1', 'row4')"></div> 
+            <div class="box smallBox col2" id="row4col2" style="background-color:white" onclick="makeMove('row4col2', 'col2', 'row4')"></div>
+            <div class="box smallBox col3" id="row4col3" style="background-color:white" onclick="makeMove('row4col3', 'col3', 'row4')"></div>
+            <div class="box smallBox col4" id="row4col4" style="background-color:white" onclick="makeMove('row4col4', 'col4', 'row4')"></div>
+            <div class="box smallBox col5" id="row4col5" style="background-color:white" onclick="makeMove('row4col5', 'col5', 'row4')"></div>
+            <div class="box smallBox col6" id="row4col6" style="background-color:white" onclick="makeMove('row4col6', 'col6', 'row4')"></div>
+            <div class="box smallBox col7" id="row4col7" style="background-color:white" onclick="makeMove('row4col7', 'col7', 'row4')"></div>
+         </div>
+            <div>
+            <div class="box smallBox col1" id="row5col1" style="background-color:white" onclick="makeMove('row5col1', 'col1', 'row5')"></div> 
+            <div class="box smallBox col2" id="row5col2" style="background-color:white" onclick="makeMove('row5col2', 'col2', 'row5')"></div>
+            <div class="box smallBox col3" id="row5col3" style="background-color:white" onclick="makeMove('row5col3', 'col3', 'row5')"></div>
+            <div class="box smallBox col4" id="row5col4" style="background-color:white" onclick="makeMove('row5col4', 'col4', 'row5')"></div>
+            <div class="box smallBox col5" id="row5col5" style="background-color:white" onclick="makeMove('row5col5', 'col5', 'row5')"></div>
+            <div class="box smallBox col6" id="row5col6" style="background-color:white" onclick="makeMove('row5col6', 'col6', 'row5')"></div>
+            <div class="box smallBox col7" id="row5col7" style="background-color:white" onclick="makeMove('row5col7', 'col7', 'row5')"></div>
+         </div>
+            <div>
+            <div class="box smallBox col1" id="row6col1" style="background-color:white" onclick="makeMove('row6col1', 'col1', 'row6')"></div> 
+            <div class="box smallBox col2" id="row6col2" style="background-color:white" onclick="makeMove('row6col2', 'col2', 'row6')"></div>
+            <div class="box smallBox col3" id="row6col3" style="background-color:white" onclick="makeMove('row6col3', 'col3', 'row6')"></div>
+            <div class="box smallBox col4" id="row6col4" style="background-color:white" onclick="makeMove('row6col4', 'col4', 'row6')"></div>
+            <div class="box smallBox col5" id="row6col5" style="background-color:white" onclick="makeMove('row6col5', 'col5', 'row6')"></div>
+            <div class="box smallBox col6" id="row6col6" style="background-color:white" onclick="makeMove('row6col6', 'col6', 'row6')"></div>
+            <div class="box smallBox col7" id="row6col7" style="background-color:white" onclick="makeMove('row6col7', 'col7', 'row6')"></div>
+         </div>
+           </div>
+         </div>
+          </div>
+  </head>
+</html>

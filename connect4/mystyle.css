@@ -1,0 +1,93 @@
+/*
+How to comment in css. forward slash star and close it with star forward slash
+*/
+/* Id and class is #
+*/
+
+#Connect4board{
+  float:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:475px;
+  height:600px;
+  
+}
+
+.smallBox{
+  height:60px;
+  width:60px;
+  border-radius:50px;
+  float:center;
+  background-color:white;
+}
+
+
+.box{
+  border-style:solid;
+  float:left;
+  text-align:center;
+  background-color:white;
+  vertical-align:middle;
+  line-height:100px;
+}
+
+#players{
+  float:left;
+}
+
+#board{
+  float:right;
+  width:350px;
+  height:350px;
+}
+
+#game{
+  border-style:solid;
+  width:600px;
+  height:400px;
+  padding:50px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:25px;
+  background-color:gold;
+  margin-bottom:25px;
+  
+}
+
+.mediumBox{
+  height:100px;
+  width:100px;
+}
+
+#content{
+  color:green;
+}
+body{
+  background-color:purple;
+  text-align:center;
+
+}
+
+#container{
+  background-color:orange;
+  margin:50px;
+  border-radius:50px;
+  padding:20px;
+}
+    /* css for gallery.html
+*/
+img {
+  height:200px;
+}
+
+#gallery img{
+  height:125px;
+}
+
+#gallery input[type=button]{
+  background-color:gold;
+  color:blue;
+  font-size:bolder;
+  padding:15px;
+  margin:4px;
+}
