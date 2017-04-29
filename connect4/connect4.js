@@ -159,40 +159,39 @@ function checkRowAcross(col){
 	   }
 }
 
+//this function checks if diagonals are filled
+//assuming that diagonals are filled
+//we check if any are not filled
 function checkDiagonal(row){
 	
-	var filled = true;
-	
-	//track rows, they get smaller
-	for(var i = row; i >= 1; i--){
-		//track columns, they get bigger
-		for(var j = 1; j <= 4; j++){
-	
-			if(!isFilled("row" + i + "col" + j)){
-				//alert("checking diagonal" + " row" + i + " col" + j);
-				//filled = false;
-				alert("not filled with row: " + row);
-				/*
-				if(row == 5){
-					break;
-				}
-				
-				if(row == 6 && (j == 1 || j == 2)){
-					break;
-				}
-				
-				*/
-				return false;
-			}
-			else{
-				i = i - 1; //i++;
-				//j = j + 1; //j++;
-			}
-		}
-  	  
-	}
+	//track columns, they get bigger
+	var originalColor = getBgColor("row" + row + "col1");
+	var i = row;
+	for(var j = 1; j <= 4; j++){
 
-	return filled;
+		//if any diagonal happen to not be filled
+		//we exit the function and it's false that there's a winner
+		if(!isFilled("row" + i + "col" + j)){
+
+			return false;
+		}
+		//else it is filled 
+		//and we move on to the next row
+		else {		
+			//if the current circle is the same color
+			//as the original
+			if(getBgColor("row" + i + "col" + j) === originalColor){
+				i = i - 1; //go to next row
+			}
+			//otherwise it's filled and not the same color
+			else{
+				return false;	
+			}			
+		}
+	}  	  
+
+	//getting to this point means that the diagonals are all filled
+	return true;
 }
 
 function checkAllDiagonals(){
