@@ -1,0 +1,104 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.box{
+	border-style:solid;
+	width:100px;
+	height:200px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-align:middle;
+	background-color:red;
+	border-color:green;
+	
+
+}
+img {
+  height:100px;
+  width:200px;
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+	}
+
+
+#players{
+	
+	
+}
+
+#board{
+
+	width:650px;
+	height:1600px;
+  margin-left:auto;
+  margin-right:auto;
+	border-color:red;
+  
+}
+
+#game{
+	border-style:solid;
+	width:700px;
+	height:1260px;
+	padding:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1XXmKUUFpsoKutG-_Y8PePqt997KADt04IEKZ0GVjDyESxYgSfw");
+	margin-bottom:15px;
+	border-radius: 15px 50px;
+}
+
+
+
+
+body{
+	background-color: blue;
+	text-align:center;
+	background-image: url("http://www.bloggrrr.com/wp-content/uploads/2013/03/18-Dark-Seamless-and-Tileable-300x150.jpg");
+}
+#container{
+	background-color: orange;
+	background-image:url("http://3.bp.blogspot.com/-3UIjuTrbAI8/Uihk5uaH_lI/AAAAAAAAAuk/gcn5XlQ9kyI/s640/Top+10+best+Simple+Awesome+Background+Images+for+Your+Website+or+Blog2.jpg");
+	border-radius:100px;
+  height:1600px;
+	padding:20px;
+	
+}
+
+img{
+	width:100px;
+	height:200px;
+}

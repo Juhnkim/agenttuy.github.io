@@ -1,0 +1,40 @@
+body{
+  background-color:gray;
+  padding:20px;
+}
+
+#banner{
+  width:100%;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
+}
+#top{
+  color:white;
+  text-align:center;
+}
+
+.group1{
+  background-color:lightgray;
+  border-radius:25px;
+}
+
+#left{
+  float:left;
+  width:200px;
+  font-size:22px;
+  height:100%;
+  border-right:solid;
+  border-width:5px;
+  padding-left:10px;
+
+}
+
+#group2{
+  height:100%;
+  width:100%;
+  border-radius:25px;
+}
+
+#mainContent{
+ 
+}

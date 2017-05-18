@@ -1,0 +1,192 @@
+
+<html>
+  <head>
+    <title>MemoryGame</title>
+    <link rel= "stylesheet" type="text/css" href="memorygame.css">
+		<script src="memorygame.js"></script>
+  </head>
+  <body onload="startGame()">
+    <div id="container">
+			<div id="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li> |
+				<li><a href="aboutme.html">About Me</a></li> |
+				<li><a href="projects.html"> App</a></li>
+			</ul>
+			</div>
+			
+			<div id="notes" style="font-family:'Algerian', Georgia, Serif;"> 
+				<font color="black">
+        <p>
+						1. Click a card to turn it over!
+				</p>
+				<p>
+				2. Match two cards to make them disappear!
+				</p>
+				<p>
+				3. Disappear all the cards to win in the shortest amount of time!
+				</p> 
+				</font>
+      </div>
+	
+			<div>
+			<style type="text/css">
+      .hoverable {
+           background: #FFFFFF url(http://www.walldevil.com/wallpapers/a20/pink-wallpaper-smple-web-background-blogger-backgrounds-media-simple-plexform.jpg) top left no-repeat;
+           height: 32px; /* height and width match your background.png dimensions */
+           width: 64px;
+       }
+      .hoverable:hover {
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRR32AbpCXWhAod7O13GzXZTI0joz2nehHykEJdnm2xfl0H2wX);
+       }
+				
+    </style>
+			
+			<form>
+		<style type="text/css">
+      <a href="http://www.online-stopwatch.com/full-screen-stopwatch/" target="_blank" class="button">Timer</a>
+			background: #FFFFFF url(http://www.walldevil.com/wallpapers/a20/pink-wallpaper-smple-web-background-blogger-backgrounds-media-simple-plexform.jpg) top left no-repeat;
+           height: 32px; /* height and width match your background.png dimensions */
+           width: 64px;
+       }
+			</style>
+	
+      <button type="submit" class="hoverable"><a href="http://www.online-stopwatch.com/full-screen-stopwatch/"></a>Timer</button>
+      <!-- or <input type="submit" class="hoverable"/> -->
+      <!-- or <button type="button" class="hoverable"></button> if you don't want submit behavior -->
+    </form>
+			</div>
+			
+			<div id="game">
+				<div id="board">
+				<div >
+					<div class="box" id="row1col1" onclick="makeMove('row1col1')">
+						<img id="row1col1img" src="images\BackCard.jpg">
+						<p>
+							x
+						</p>
+					</div>
+					<div class="box" id="row1col2" onclick="makeMove('row1col2')">
+						<img id="row1col2img"  src="images\BackCard.jpg">
+						<p>
+							x
+						</p>
+					</div>
+					<div class="box" id="row1col3" onclick="makeMove('row1col3')">
+					<img id="row1col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row1col4" onclick="makeMove('row1col4')">
+					<img id="row1col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row1col5" onclick="makeMove('row1col5')">
+					<img id="row1col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row1col6" onclick="makeMove('row1col6')">
+					<img id="row1col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+				<div>
+					<div class="box" id="row2col1" onclick="makeMove('row2col1')">
+					<img id="row2col1img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row2col2" onclick="makeMove('row2col2')">
+					<img id="row2col2img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row2col3" onclick="makeMove('row2col3')">
+					<img id="row2col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row2col4" onclick="makeMove('row2col4')">
+					<img id="row2col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row2col5" onclick="makeMove('row2col5')">
+					<img id="row2col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row2col6" onclick="makeMove('row2col6')">
+					<img id="row2col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+				<div>
+					<div class="box" id="row3col1" onclick="makeMove('row3col1')">
+					<img id="row3col1img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row3col2" onclick="makeMove('row3col2')">
+					<img id="row3col2img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row3col3" onclick="makeMove('row3col3')">
+					<img id="row3col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row3col4" onclick="makeMove('row3col4')">
+					<img id="row3col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row3col5" onclick="makeMove('row3col5')">
+					<img id="row3col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row3col6" onclick="makeMove('row3col6')">
+					<img id="row3col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+				<div>
+					<div class="box" id="row4col1" onclick="makeMove('row4col1')">
+					<img id="row4col1img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row4col2" onclick="makeMove('row4col2')">
+					<img id="row4col2img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row4col3" onclick="makeMove('row4col3')">
+					<img id="row4col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row4col4" onclick="makeMove('row4col4')">
+					<img id="row4col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row4col5" onclick="makeMove('row4col5')">
+					<img id="row4col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row4col6" onclick="makeMove('row4col6')">
+					<img id="row4col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+				<div>
+					<div class="box" id="row5col1" onclick="makeMove('row5col1')">
+					<img id="row5col1img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row5col2" onclick="makeMove('row5col2')">
+					<img id="row5col2img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row5col3" onclick="makeMove('row5col3')">
+					<img id="row5col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row5col4" onclick="makeMove('row5col4')">
+					<img id="row5col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row5col5" onclick="makeMove('row5col5')">
+					<img id="row5col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row5col6" onclick="makeMove('row5col6')">
+					<img id="row5col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+				<div>
+					<div class="box" id="row6col1" onclick="makeMove('row6col1')">
+					<img id="row6col1img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row6col2" onclick="makeMove('row6col2')">
+					<img id="row6col2img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row6col3" onclick="makeMove('row6col3')">
+					<img id="row6col3img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row6col4" onclick="makeMove('row6col4')">
+					<img id="row6col4img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row6col5" onclick="makeMove('row6col5')">
+					<img id="row6col5img" src="images\BackCard.jpg">
+					</div>
+					<div class="box" id="row6col6" onclick="makeMove('row6col6')">
+					<img id="row6col6img" src="images\BackCard.jpg">
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+  </body>
+</html>
