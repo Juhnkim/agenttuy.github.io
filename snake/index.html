@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <title>Snake! </title>
+    <style>
+      #snakeHead{
+        position:fixed;
+        top:0;
+        left:0;
+        height:20px;
+        width:20px;
+        background-color:orange;
+      }
+      .snakeBit{
+        height:10px;
+        width:10px;
+        background-color:orange;
+      }
+      #fruit{
+        position:fixed;
+        top:0;
+        left:0;
+        height:10px;
+        width:10px;
+        background-color:red;
+        border-radius:10px;
+      }
+    </style>
+    <script>
+      var screenWidth, screenHeight;
+      var pressedKey;
+      var snakeX, snakeY, snakeWidth = 10, snakeHeight = 10;
+      var fruitX, fruitY;
+
+      //sets up the game
+      function startGame(){
+        getWindowSize();
+        randomizeFruit();
+        snakeX = screenWidth / 2;
+        snakeY = screenHeight / 2;
+        updateSnake(snakeX, snakeY);
+        //alert(screenHeight + "x" + screenHeight);
+      }
+
+      //update x and y of snake
+      function updateSnake(x, y){
+        document.getElementById("snakeHead").style.left = x + "px";
+        document.getElementById("snakeHead").style.top = y + "px";
+      }
+      
+      //function to get window's width and height
+      function getWindowSize(){
+        screenWidth = window.innerWidth;
+        screenHeight = window.innerHeight;
+      }
+
+      //randomize the fruite location
+      function randomizeFruit(){
+        //give random location of fruit
+        var x = Math.floor((Math.random() * screenWidth) + 1);
+        var y = Math.floor((Math.random() * screenHeight) + 1);
+        
+        //update dom with location
+        document.getElementById("fruit").style.left = x;
+        document.getElementById("fruit").style.top = y;
+        
+        //update fruit coordinates for use
+        fruitX = x;
+        fruitY = y;
+      }
+
+      //change up the the game resolution if window is resized
+      window.onresize = function(event) {
+        getWindowSize();
+        //alert(screenHeight + "x" + screenHeight);
+      };
+
+      //detect if arrow keys are pressed
+      document.onkeydown = function (e) {
+        pressedKey = e.keyCode;
+        //alert(pressedKey);
+        draw();
+      };
+
+      //update html and draw
+      function draw(){
+        //right
+        if(pressedKey == 39)
+          snakeX = snakeX + 10;
+        //left
+        else if(pressedKey == 37)
+          snakeX = snakeX - 10;
+        //down
+        else if(pressedKey == 38)
+          snakeY = snakeY - 10;
+        //up
+        else if(pressedKey == 40)
+          snakeY = snakeY + 10;
+
+        //update position
+        updateSnake(snakeX, snakeY);
+        logic(); 
+      }
+
+      //handle the logic of the game
+      function logic(){
+        //if the snake location goes off the border on the right
+        if(snakeX >= screenWidth)
+          //then make it appear on the left
+          snakeX = 0;
+        //if the snake goes off the border on the left
+        else if(snakeX < 0)
+          //then make it appear on the right
+          snakeX = screenWidth;
+        //if the snake goes off the border o the top
+        else if(snakeY >= screenHeight)
+          //then make it appear on the bottom
+          snakeY = 0;
+        //if the snake goes off the border on the bottom
+        else if(snakeY < 0)
+          //then make it appear at the top
+          snakeY = screenHeight;
+        
+        //if the snake gets the fruit
+        if((snakeX >= (fruitX)) && (snakeX <= (fruitX + 10)) && 
+           (snakeY >= (fruitY)) && (snakeY <= (fruitY + 10))){
+          
+          //make snaker bigger
+          snakeWidth = snakeWidth + 10;
+          snakeHeight = snakeHeight + 10;
+          document.getElementById("snakeHead").style.width = snakeWidth + "px";
+          document.getElementById("snakeHead").style.height = snakeHeight+ "px";
+          
+          //make it is disappear and then randomize to another location
+          randomizeFruit();
+        }
+      }
+    </script>
+  </head>
+  <body onload="startGame();">
+    <section>
+      <div id="snakeHead"></div>
+      <div id="fruit"></div>
+    <section>
+  </body>
+</html>
